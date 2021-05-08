@@ -7,7 +7,7 @@ using System.IO;
 
 namespace SAP {
     class DbConnection {
-        private string db_name = "pizzeria.db";
+        private string db_name = "./pizzeria.db";
         private string db_script = "new_pizzeria.sql";
         private static DbConnection db;
         private bool is_nuevo = false; 
