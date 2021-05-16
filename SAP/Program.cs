@@ -14,7 +14,7 @@ namespace SAP {
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new vistas.frmMain());
+            Application.Run(new vistas.frmPrincipal());
             DbConnection.getConnection().close();
         }
     }

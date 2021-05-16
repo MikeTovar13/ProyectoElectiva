@@ -11,7 +11,7 @@ namespace SAP.vistas {
     public partial class frmPedido : Form {
 
         DbConnection conn;
-        DataTable table_prod, table_client, table;
+        DataTable table_prod, table_client, table, table_cuenta;
         public frmPedido() {
             InitializeComponent();
             conn = DbConnection.getConnection();
@@ -34,6 +34,11 @@ namespace SAP.vistas {
             table.Columns.Add("Cantidad", typeof(int));
             table.Columns.Add("Valor", typeof(String));
             dgvProductos.DataSource = table;
+            query = "select cuenta_id Id, cuenta Nombre from cuenta where eliminado = 0";
+            table_cuenta = conn.execute(query);
+            cbxCuenta.DataSource = table_cuenta;
+            cbxCuenta.DisplayMember = "Nombre";
+            cbxCuenta.ValueMember = "Id";
         }
         private void btn_salir_Click(object sender, EventArgs e) {
             this.Close();
@@ -51,7 +56,16 @@ namespace SAP.vistas {
 
         private void btnAgregar_Click(object sender, EventArgs e) {
             string id = txtId.Text;
-            //string nombre = txtNombre.Text;
+            int id_cliente = int.Parse(cbxCliente.SelectedValue.ToString());
+            int id_cuenta = int.Parse(cbxCuenta.SelectedValue.ToString());
+            bool isDomicilio = cbxDomicilio.Checked;
+            MessageBox.Show(isDomicilio.ToString());
+
+            foreach (DataGridViewRow row in dgvProductos.Rows) {
+                for (int i = 0; i < dgvProductos.ColumnCount; i++) {
+                    MessageBox.Show(row.Cells[i].Value.ToString());
+                }
+            }
             //string valor = txtValor.Text;
             //string descripcion = txtDescripción.Text;
 
@@ -115,6 +129,11 @@ namespace SAP.vistas {
         }
 
         private void dgvProductos_CellContentClick(object sender, DataGridViewCellEventArgs e) {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
 
