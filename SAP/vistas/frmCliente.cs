@@ -99,5 +99,6 @@ namespace SAP.vistas {
                 MessageBox.Show("Seleccione un cliente para eliminar", "Cliente", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
     }
 }

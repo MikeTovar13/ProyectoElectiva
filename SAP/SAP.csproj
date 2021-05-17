@@ -17,6 +17,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Update="vistas\frmListadoPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="vistas\frmMovimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="vistas\frmCuenta.cs">
       <SubType>Form</SubType>
     </Compile>

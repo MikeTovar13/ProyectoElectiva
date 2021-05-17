@@ -10,7 +10,6 @@ using SAP.modelo;
 
 namespace SAP.vistas {
     public partial class frmMain : Form {
-        private List<Pedido> pedidos;
         public frmMain() {
             InitializeComponent();
             cargar_pedidos();

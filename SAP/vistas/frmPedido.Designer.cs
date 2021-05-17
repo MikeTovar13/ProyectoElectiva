@@ -155,7 +155,6 @@ namespace SAP.vistas {
             this.dgvProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProductos.Size = new System.Drawing.Size(636, 230);
             this.dgvProductos.TabIndex = 39;
-            this.dgvProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductos_CellContentClick);
             // 
             // btn_agregar_producto
             // 
@@ -193,6 +192,7 @@ namespace SAP.vistas {
             this.btn_quitar_producto.TabIndex = 41;
             this.btn_quitar_producto.Text = "Eliminar producto";
             this.btn_quitar_producto.UseVisualStyleBackColor = false;
+            this.btn_quitar_producto.Click += new System.EventHandler(this.btn_quitar_producto_Click);
             // 
             // label1
             // 
@@ -260,7 +260,6 @@ namespace SAP.vistas {
             this.cbxCuenta.Name = "cbxCuenta";
             this.cbxCuenta.Size = new System.Drawing.Size(232, 28);
             this.cbxCuenta.TabIndex = 47;
-            this.cbxCuenta.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // frmPedido
             // 

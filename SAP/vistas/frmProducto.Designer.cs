@@ -150,9 +150,9 @@ namespace SAP.vistas {
             // 
             this.txtValor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtValor.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtValor.Location = new System.Drawing.Point(549, 87);
+            this.txtValor.Location = new System.Drawing.Point(494, 87);
             this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(211, 26);
+            this.txtValor.Size = new System.Drawing.Size(266, 26);
             this.txtValor.TabIndex = 25;
             this.txtValor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValor_KeyPress);
             this.txtValor.Leave += new System.EventHandler(this.txtValor_Leave);
@@ -161,7 +161,7 @@ namespace SAP.vistas {
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(495, 90);
+            this.label4.Location = new System.Drawing.Point(440, 90);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 20);
             this.label4.TabIndex = 24;
@@ -174,7 +174,7 @@ namespace SAP.vistas {
             this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtNombre.Location = new System.Drawing.Point(104, 87);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(268, 26);
+            this.txtNombre.Size = new System.Drawing.Size(330, 26);
             this.txtNombre.TabIndex = 23;
             // 
             // label3

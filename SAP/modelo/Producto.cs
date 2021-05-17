@@ -5,11 +5,11 @@ using System.Text;
 namespace SAP.modelo {
     class Producto {
         public int id { get; set; }
-        public int valor{ get; set; }
+        public double valor{ get; set; }
         private string nombre { get; set; }
         private string descripcion { get; set; }
 
-        public Producto(int valor, string nombre, string descripcion) {
+        public Producto(double valor, string nombre, string descripcion) {
             this.valor = valor;
             this.nombre = nombre;
             this.descripcion = descripcion;

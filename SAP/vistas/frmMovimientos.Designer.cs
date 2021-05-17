@@ -1,6 +1,6 @@
 ﻿
 namespace SAP.vistas {
-    partial class frmCliente {
+    partial class frmMovimientos {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -30,19 +30,20 @@ namespace SAP.vistas {
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtValor = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtDirección = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
-            this.dgvClientes = new System.Windows.Forms.DataGridView();
+            this.dgvMovimientos = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.btn_editar = new System.Windows.Forms.Button();
-            this.btn_eliminar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
+            this.cbxTipo = new System.Windows.Forms.ComboBox();
+            this.cbxCuenta = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMovimientos)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -51,9 +52,9 @@ namespace SAP.vistas {
             this.label2.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(30, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 32);
+            this.label2.Size = new System.Drawing.Size(177, 32);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Clientes";
+            this.label2.Text = "Movimientos";
             // 
             // label1
             // 
@@ -70,46 +71,38 @@ namespace SAP.vistas {
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(30, 90);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 20);
+            this.label3.Size = new System.Drawing.Size(64, 20);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Nombre";
+            this.label3.Text = "Cuenta";
             // 
-            // txtNombre
+            // txtValor
             // 
-            this.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtNombre.Location = new System.Drawing.Point(104, 87);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(268, 26);
-            this.txtNombre.TabIndex = 10;
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtTelefono.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtTelefono.Location = new System.Drawing.Point(455, 86);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(305, 26);
-            this.txtTelefono.TabIndex = 12;
+            this.txtValor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtValor.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtValor.Location = new System.Drawing.Point(519, 87);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(241, 26);
+            this.txtValor.TabIndex = 12;
+            this.txtValor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValor_KeyPress);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(378, 90);
+            this.label4.Location = new System.Drawing.Point(276, 90);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 20);
+            this.label4.Size = new System.Drawing.Size(37, 20);
             this.label4.TabIndex = 11;
-            this.label4.Text = "Teléfono";
+            this.label4.Text = "Tipo";
             // 
-            // txtDirección
+            // txtDescripcion
             // 
-            this.txtDirección.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtDirección.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtDirección.Location = new System.Drawing.Point(116, 119);
-            this.txtDirección.Name = "txtDirección";
-            this.txtDirección.Size = new System.Drawing.Size(644, 26);
-            this.txtDirección.TabIndex = 14;
+            this.txtDescripcion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtDescripcion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDescripcion.Location = new System.Drawing.Point(132, 119);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(628, 26);
+            this.txtDescripcion.TabIndex = 14;
             // 
             // label5
             // 
@@ -117,13 +110,13 @@ namespace SAP.vistas {
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(30, 122);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 20);
+            this.label5.Size = new System.Drawing.Size(96, 20);
             this.label5.TabIndex = 13;
-            this.label5.Text = "Dirección";
+            this.label5.Text = "Descripción";
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(153, 3);
+            this.txtId.Location = new System.Drawing.Point(213, 3);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 25);
             this.txtId.TabIndex = 15;
@@ -167,16 +160,16 @@ namespace SAP.vistas {
             this.btnLimpiar.UseVisualStyleBackColor = false;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
-            // dgvClientes
+            // dgvMovimientos
             // 
-            this.dgvClientes.AllowUserToAddRows = false;
-            this.dgvClientes.AllowUserToDeleteRows = false;
-            this.dgvClientes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvMovimientos.AllowUserToAddRows = false;
+            this.dgvMovimientos.AllowUserToDeleteRows = false;
+            this.dgvMovimientos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvClientes.BackgroundColor = System.Drawing.Color.DarkGray;
-            this.dgvClientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvMovimientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMovimientos.BackgroundColor = System.Drawing.Color.DarkGray;
+            this.dgvMovimientos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -184,8 +177,8 @@ namespace SAP.vistas {
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.IndianRed;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMovimientos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvMovimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -193,11 +186,11 @@ namespace SAP.vistas {
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.IndianRed;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvClientes.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvClientes.Location = new System.Drawing.Point(30, 210);
-            this.dgvClientes.MultiSelect = false;
-            this.dgvClientes.Name = "dgvClientes";
-            this.dgvClientes.ReadOnly = true;
+            this.dgvMovimientos.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvMovimientos.Location = new System.Drawing.Point(30, 210);
+            this.dgvMovimientos.MultiSelect = false;
+            this.dgvMovimientos.Name = "dgvMovimientos";
+            this.dgvMovimientos.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -205,11 +198,11 @@ namespace SAP.vistas {
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.IndianRed;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvClientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvClientes.RowTemplate.Height = 25;
-            this.dgvClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvClientes.Size = new System.Drawing.Size(635, 250);
-            this.dgvClientes.TabIndex = 18;
+            this.dgvMovimientos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvMovimientos.RowTemplate.Height = 25;
+            this.dgvMovimientos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvMovimientos.Size = new System.Drawing.Size(635, 250);
+            this.dgvMovimientos.TabIndex = 18;
             // 
             // label6
             // 
@@ -232,7 +225,7 @@ namespace SAP.vistas {
             this.btn_editar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_editar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_editar.ForeColor = System.Drawing.Color.White;
-            this.btn_editar.Location = new System.Drawing.Point(671, 390);
+            this.btn_editar.Location = new System.Drawing.Point(671, 428);
             this.btn_editar.Name = "btn_editar";
             this.btn_editar.Size = new System.Drawing.Size(89, 32);
             this.btn_editar.TabIndex = 20;
@@ -240,52 +233,60 @@ namespace SAP.vistas {
             this.btn_editar.UseVisualStyleBackColor = false;
             this.btn_editar.Click += new System.EventHandler(this.btn_editar_Click);
             // 
-            // btn_eliminar
+            // cbxTipo
             // 
-            this.btn_eliminar.BackColor = System.Drawing.Color.Firebrick;
-            this.btn_eliminar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.btn_eliminar.FlatAppearance.BorderSize = 2;
-            this.btn_eliminar.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
-            this.btn_eliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.btn_eliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.btn_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_eliminar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_eliminar.ForeColor = System.Drawing.Color.White;
-            this.btn_eliminar.Location = new System.Drawing.Point(671, 428);
-            this.btn_eliminar.Name = "btn_eliminar";
-            this.btn_eliminar.Size = new System.Drawing.Size(89, 32);
-            this.btn_eliminar.TabIndex = 21;
-            this.btn_eliminar.Text = "Eliminar";
-            this.btn_eliminar.UseVisualStyleBackColor = false;
-            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
+            this.cbxTipo.FormattingEnabled = true;
+            this.cbxTipo.Location = new System.Drawing.Point(319, 88);
+            this.cbxTipo.Name = "cbxTipo";
+            this.cbxTipo.Size = new System.Drawing.Size(140, 26);
+            this.cbxTipo.TabIndex = 21;
             // 
-            // frmCliente
+            // cbxCuenta
+            // 
+            this.cbxCuenta.FormattingEnabled = true;
+            this.cbxCuenta.Location = new System.Drawing.Point(100, 88);
+            this.cbxCuenta.Name = "cbxCuenta";
+            this.cbxCuenta.Size = new System.Drawing.Size(170, 26);
+            this.cbxCuenta.TabIndex = 22;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(465, 90);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(48, 20);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "Valor";
+            // 
+            // frmMovimientos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(780, 480);
-            this.Controls.Add(this.btn_eliminar);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.cbxCuenta);
+            this.Controls.Add(this.cbxTipo);
             this.Controls.Add(this.btn_editar);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.dgvClientes);
+            this.Controls.Add(this.dgvMovimientos);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtId);
-            this.Controls.Add(this.txtDirección);
+            this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtTelefono);
+            this.Controls.Add(this.txtValor);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmCliente";
+            this.Name = "frmMovimientos";
             this.Padding = new System.Windows.Forms.Padding(0, 0, 30, 30);
             this.Text = "Administración de clientes";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMovimientos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,17 +296,18 @@ namespace SAP.vistas {
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtDirección;
+        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnLimpiar;
-        private System.Windows.Forms.DataGridView dgvClientes;
+        private System.Windows.Forms.DataGridView dgvMovimientos;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btn_editar;
-        private System.Windows.Forms.Button btn_eliminar;
+        private System.Windows.Forms.ComboBox cbxTipo;
+        private System.Windows.Forms.ComboBox cbxCuenta;
+        private System.Windows.Forms.Label label7;
     }
 }

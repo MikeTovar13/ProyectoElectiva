@@ -97,8 +97,10 @@ namespace SAP.vistas {
         }
 
         private void txtValor_Leave(object sender, EventArgs e) {
-            double sl = Convert.ToDouble(txtValor.Text);
-            txtValor.Text = sl.ToString("#,#");
+            if (!string.IsNullOrWhiteSpace(txtValor.Text)) {
+                double sl = Convert.ToDouble(txtValor.Text);
+                txtValor.Text = sl.ToString("#,#");
+            }
         }
 
         private void btn_editar_Click(object sender, EventArgs e) {

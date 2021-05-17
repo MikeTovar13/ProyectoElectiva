@@ -38,13 +38,15 @@ namespace SAP {
             DataTable dt = new DataTable();
             da.Fill(dt);
             return dt;
-        
         }
 
-        public void executeNQ(string query) {
+        public long executeNQ(string query) {
             SQLiteCommand command = new SQLiteCommand(query, this.connection);
             command.ExecuteNonQuery();
+
+            return this.connection.LastInsertRowId;
         }
+
         public void close() {
             this.connection.Close();
         }

@@ -49,22 +49,25 @@ namespace SAP.vistas
             switch (b.Name)
             {
                 case "btn_form1":
-                    this.AbrirFormEnPanel(new frmPedido());
+                    this.AbrirFormEnPanel(new frmListadoPedidos());
                     break;
                 case "btn_form2":
                     this.AbrirFormEnPanel(new frmPedido());
                     break;
                 case "btn_form3":
-                    this.AbrirFormEnPanel(new frmEstado());
+                    this.AbrirFormEnPanel(new frmMovimientos());
                     break;
                 case "btn_form4":
                     this.AbrirFormEnPanel(new frmProducto());
                     break;
                 case "btn_form5":
-                    this.AbrirFormEnPanel(new frmCuenta());
+                    this.AbrirFormEnPanel(new frmCliente());
                     break;
                 case "btn_form6":
-                    this.AbrirFormEnPanel(new frmCliente());
+                    this.AbrirFormEnPanel(new frmCuenta());
+                    break;
+                case "btn_form7":
+                    this.AbrirFormEnPanel(new frmEstado());
                     break;
             }
         }

@@ -34,12 +34,13 @@ namespace SAP.vistas
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_form7 = new System.Windows.Forms.Button();
             this.btn_form6 = new System.Windows.Forms.Button();
             this.btn_form5 = new System.Windows.Forms.Button();
             this.btn_form4 = new System.Windows.Forms.Button();
-            this.btn_form3 = new System.Windows.Forms.Button();
             this.btn_form2 = new System.Windows.Forms.Button();
             this.btn_form1 = new System.Windows.Forms.Button();
+            this.btn_form3 = new System.Windows.Forms.Button();
             this.pnlRenderizar = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -91,17 +92,32 @@ namespace SAP.vistas
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.Controls.Add(this.btn_form7);
             this.panel2.Controls.Add(this.btn_form6);
             this.panel2.Controls.Add(this.btn_form5);
             this.panel2.Controls.Add(this.btn_form4);
-            this.panel2.Controls.Add(this.btn_form3);
             this.panel2.Controls.Add(this.btn_form2);
             this.panel2.Controls.Add(this.btn_form1);
+            this.panel2.Controls.Add(this.btn_form3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 63);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(182, 480);
             this.panel2.TabIndex = 1;
+            // 
+            // btn_form7
+            // 
+            this.btn_form7.BackColor = System.Drawing.Color.Firebrick;
+            this.btn_form7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_form7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_form7.ForeColor = System.Drawing.Color.White;
+            this.btn_form7.Location = new System.Drawing.Point(12, 428);
+            this.btn_form7.Name = "btn_form7";
+            this.btn_form7.Size = new System.Drawing.Size(154, 35);
+            this.btn_form7.TabIndex = 16;
+            this.btn_form7.Text = "Estados";
+            this.btn_form7.UseVisualStyleBackColor = false;
+            this.btn_form7.Click += new System.EventHandler(this.renderizar_Click);
             // 
             // btn_form6
             // 
@@ -109,11 +125,11 @@ namespace SAP.vistas
             this.btn_form6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_form6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_form6.ForeColor = System.Drawing.Color.White;
-            this.btn_form6.Location = new System.Drawing.Point(12, 430);
+            this.btn_form6.Location = new System.Drawing.Point(12, 360);
             this.btn_form6.Name = "btn_form6";
             this.btn_form6.Size = new System.Drawing.Size(154, 35);
-            this.btn_form6.TabIndex = 19;
-            this.btn_form6.Text = "Clientes";
+            this.btn_form6.TabIndex = 18;
+            this.btn_form6.Text = "Cuentas";
             this.btn_form6.UseVisualStyleBackColor = false;
             this.btn_form6.Click += new System.EventHandler(this.renderizar_Click);
             // 
@@ -123,11 +139,11 @@ namespace SAP.vistas
             this.btn_form5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_form5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_form5.ForeColor = System.Drawing.Color.White;
-            this.btn_form5.Location = new System.Drawing.Point(12, 348);
+            this.btn_form5.Location = new System.Drawing.Point(12, 292);
             this.btn_form5.Name = "btn_form5";
             this.btn_form5.Size = new System.Drawing.Size(154, 35);
-            this.btn_form5.TabIndex = 18;
-            this.btn_form5.Text = "Cuentas";
+            this.btn_form5.TabIndex = 19;
+            this.btn_form5.Text = "Clientes";
             this.btn_form5.UseVisualStyleBackColor = false;
             this.btn_form5.Click += new System.EventHandler(this.renderizar_Click);
             // 
@@ -137,7 +153,7 @@ namespace SAP.vistas
             this.btn_form4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_form4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_form4.ForeColor = System.Drawing.Color.White;
-            this.btn_form4.Location = new System.Drawing.Point(12, 266);
+            this.btn_form4.Location = new System.Drawing.Point(12, 224);
             this.btn_form4.Name = "btn_form4";
             this.btn_form4.Size = new System.Drawing.Size(154, 35);
             this.btn_form4.TabIndex = 17;
@@ -145,31 +161,17 @@ namespace SAP.vistas
             this.btn_form4.UseVisualStyleBackColor = false;
             this.btn_form4.Click += new System.EventHandler(this.renderizar_Click);
             // 
-            // btn_form3
-            // 
-            this.btn_form3.BackColor = System.Drawing.Color.Firebrick;
-            this.btn_form3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_form3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_form3.ForeColor = System.Drawing.Color.White;
-            this.btn_form3.Location = new System.Drawing.Point(12, 184);
-            this.btn_form3.Name = "btn_form3";
-            this.btn_form3.Size = new System.Drawing.Size(154, 35);
-            this.btn_form3.TabIndex = 16;
-            this.btn_form3.Text = "Estados";
-            this.btn_form3.UseVisualStyleBackColor = false;
-            this.btn_form3.Click += new System.EventHandler(this.renderizar_Click);
-            // 
             // btn_form2
             // 
             this.btn_form2.BackColor = System.Drawing.Color.Firebrick;
             this.btn_form2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_form2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_form2.ForeColor = System.Drawing.Color.White;
-            this.btn_form2.Location = new System.Drawing.Point(12, 102);
+            this.btn_form2.Location = new System.Drawing.Point(12, 88);
             this.btn_form2.Name = "btn_form2";
             this.btn_form2.Size = new System.Drawing.Size(154, 35);
-            this.btn_form2.TabIndex = 15;
-            this.btn_form2.Text = "Movimientos";
+            this.btn_form2.TabIndex = 14;
+            this.btn_form2.Text = "Nuevo Pedido";
             this.btn_form2.UseVisualStyleBackColor = false;
             this.btn_form2.Click += new System.EventHandler(this.renderizar_Click);
             // 
@@ -182,10 +184,24 @@ namespace SAP.vistas
             this.btn_form1.Location = new System.Drawing.Point(12, 20);
             this.btn_form1.Name = "btn_form1";
             this.btn_form1.Size = new System.Drawing.Size(154, 35);
-            this.btn_form1.TabIndex = 14;
-            this.btn_form1.Text = "Nuevo Pedido";
+            this.btn_form1.TabIndex = 21;
+            this.btn_form1.Text = "Listado pedidos";
             this.btn_form1.UseVisualStyleBackColor = false;
             this.btn_form1.Click += new System.EventHandler(this.renderizar_Click);
+            // 
+            // btn_form3
+            // 
+            this.btn_form3.BackColor = System.Drawing.Color.Firebrick;
+            this.btn_form3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_form3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_form3.ForeColor = System.Drawing.Color.White;
+            this.btn_form3.Location = new System.Drawing.Point(12, 156);
+            this.btn_form3.Name = "btn_form3";
+            this.btn_form3.Size = new System.Drawing.Size(154, 35);
+            this.btn_form3.TabIndex = 15;
+            this.btn_form3.Text = "Movimientos";
+            this.btn_form3.UseVisualStyleBackColor = false;
+            this.btn_form3.Click += new System.EventHandler(this.renderizar_Click);
             // 
             // pnlRenderizar
             // 
@@ -219,15 +235,16 @@ namespace SAP.vistas
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btn_form1;
-        private System.Windows.Forms.Button btn_form6;
-        private System.Windows.Forms.Button btn_form5;
-        private System.Windows.Forms.Button btn_form4;
-        private System.Windows.Forms.Button btn_form3;
         private System.Windows.Forms.Button btn_form2;
+        private System.Windows.Forms.Button btn_form5;
+        private System.Windows.Forms.Button btn_form6;
+        private System.Windows.Forms.Button btn_form4;
+        private System.Windows.Forms.Button btn_form7;
+        private System.Windows.Forms.Button btn_form3;
         private System.Windows.Forms.Panel pnlRenderizar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btn_form1;
     }
 }
